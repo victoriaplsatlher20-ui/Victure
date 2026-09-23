@@ -1,0 +1,32 @@
+/*Cascading Style Sheets - CSS*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+                
+    }
+header{
+    background-color: chocolate;
+    border-radius: 20PX;
+    text-align: center;
+    }
+.paragrafo {
+        color: rgb(255, 98, 59);
+        
+    }
+body{
+    background-color: whitesmoke;
+    
+}
+a{
+    color: rgb(255, 255, 255);
+}
+button{
+    background-color: rgb(99, 64, 39);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+        
+            
+   
