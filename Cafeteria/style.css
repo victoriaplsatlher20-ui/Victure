@@ -1,0 +1,139 @@
+
+:root{
+    --marrom: rgb(37, 22, 11);
+    --marrom-claro: #3b2d26;
+    --marrom-tomclaro: #997868;
+    --branco: white;
+    --tom-branco: antiquewhite;
+    --paleta-laranjado: bisque;
+}
+body{
+        margin: 0; /* Remove as margens padrão do navegador */
+
+        /* Cria um fundo com uma imagem e uma camada de cor escura
+         semi-transparente por cima para melhorar a leitura do texto */
+        background-image: 
+        linear-gradient(
+            rgba(40, 25, 18, 0.45),
+            rgba(40, 25, 18, 0.45)
+        ),
+        url("img/img9.jpg");
+
+        background-size: cover;     /* Faz a imagem cobrir toda a tela proporcionalmente */
+        
+        background-position: center;  /* Centraliza a imagem de fundo */
+
+        background-attachment: fixed;   /* Mantém o fundo fixo enquanto o usuário rola a página */
+
+        background-repeat: no-repeat;    /* Evita que a imagem de fundo fique se repetindo (em ladrilho) */
+
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--branco);
+    }
+    header{
+        background-color: var(--marrom);
+        text-align: center;
+        font-size: 25px;
+        color: var(--branco);
+    }
+    header h1{
+        margin: 0;
+    }
+    h1{
+        font-family: initial;
+        color: var(--paleta-laranjado);
+        font-style: italic;
+    }
+    
+    header img{
+        padding: 20px;  /* Adiciona um espaçamento interno ao redor da imagem do header */
+    }
+
+    h2{
+        font-size: 10px;
+        color: var(--paleta-laranjado);
+        font-size: 25px;
+        font-family:initial;
+        font-style: italic;
+    }
+    p{
+        font-size: 5px;
+        margin-bottom: 5px;  /* Espaço pequeno abaixo de cada parágrafo */
+        margin-left: 10px;   /*Espaço leve á esquerda*/
+        text-align: left;
+        font-size: 20px;
+    }
+    h3{
+        font-family: cursive;
+        font-size: 25px;
+        margin-left: 5px;
+        text-align: left;
+        
+    }
+
+    /*Estrutura e Layout das SEÇÕES*/
+    section{
+        background-color: var(--marrom-claro);
+        border-radius: 10px;
+        max-width: 750px;
+        margin: 20px auto;          /*Dá um espaço de 20px em cima/baixo e o auto centraliza a seção na teça */
+        border-left: 4px solid var(--marrom-tomclaro);
+
+        /*colocar a imagem e o texto lado a lado*/
+        display: flex;
+        align-items: center;   /*Alinha a imagem e o texto verticalmente no centro */
+        gap: 25px;   /* Espaço/distância entre a imagem e o texto */
+        padding: 20px;
+    }
+
+    section img{
+        object-fit: cover;   /* Garante que a foto preencha o espaço perfeitamente sem distorcer ou esticar */
+        border-radius: 8px;   /* Arredonda os cantinhos da imagem */
+        flex-shrink: 0;     /* Impede que a imagem encolha caso o espaço fique apertado*/
+    }
+
+    /* Cria a caixinha invisível que agrupa os textos ao lado da imagem */
+    section .texto{
+        flex: 1;   /* Faz o texto ocupar todo o espaço restante ao lado da imagem */
+    }
+
+    /* Inverte a ordem em seções pares, como na 2°, 4° e 6° seção  á imagem de lá vai para a direita e o texto para a esquerda */
+    section:nth-child(even) {
+        flex-direction: row-reverse ;
+    }
+
+    /*Ajustes das SEÇÕES*/
+    .fav{
+        padding-bottom: 15px;
+    }
+    
+     .programacao p{
+        padding: 10px;
+        color: var(--paleta-laranjado);
+        margin-right: 10px;
+        display: block;
+        background-color: var(--marrom-tomclaro);
+        border-radius: 10px;
+        
+     }
+     .programacao{
+        padding-bottom: 5px;
+     }
+
+     .evento {
+        color: var(--tom-branco);
+        background-color: var(--marrom-claro);
+        border: 2px dashed var(--marrom);   /*Borda tracejada*/
+        padding: 10px;
+        text-align: center;
+        margin-top: 25px;
+     }
+
+     
+     footer p{
+        padding: 5px;
+        display: block;
+        margin: auto;
+        text-align: center;
+     }
+     
