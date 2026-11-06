@@ -1,0 +1,257 @@
+body {
+            /* Define a fonte legível Arial para todo o texto */
+            font-family: Arial, sans-serif;
+            
+            /* REQUISITO: Imagem de fundo no site todo com camada de escurecimento */
+            /* Usamos um gradiente escuro por cima da imagem para garantir leitura perfeita do texto */
+            background-image: linear-gradient(rgba(26, 16, 10, 0.85), rgba(26, 16, 10, 0.85));
+            
+            /* Ajusta a imagem de fundo para cobrir toda a tela */
+            background-size: cover;
+            /* Centraliza a imagem de fundo */
+            background-position: center;
+            /* Mantém o fundo fixo enquanto a página rola */
+            background-attachment: fixed;
+            
+            /* Cor padrão do texto (tom claro tom de pergaminho) */
+            color: #f3e5d8;
+            
+            /* Zera margens e espaçamentos padrão do navegador */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 2. CABEÇALHO E MENU DE NAVEGAÇÃO*/
+        header {
+            /* Fundo marrom couro escuro com transparência */
+            background-color: rgba(42, 26, 16, 0.95);
+            /* Borda inferior dourada/âmbar */
+            border-bottom: 3px solid #d9a566;
+            /* Preenchimento interno (20px topo/baixo) */
+            padding: 20px 10px;
+            /* Centraliza o título e o menu */
+            text-align: center;
+            /* Mantém o cabeçalho no topo ao rolar a página */
+            position: sticky;
+            top: 0;
+            /* Garante que o cabeçalho fique por cima do conteúdo */
+            z-index: 100;
+        }
+
+        /* Título do cabeçalho (Tamanho de fonte grande 1) */
+        header h1 {
+            margin: 0 0 10px 0;
+            /* Tamanho de fonte 1: Grande (32px) */
+            font-size: 32px;
+            color: #d9a566;
+            /* Espaçamento entre as letras para efeito estilizado */
+            letter-spacing: 2px;
+        }
+
+        /* Links do Menu de Navegação */
+        nav a {
+            color: #f3e5d8;
+            text-decoration: none;
+            /* Margem para distanciar um link do outro */
+            margin: 0 12px;
+            /* Tamanho de fonte 2: Médio (15px) */
+            font-size: 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        /* REQUISITO: Efeito :hover ao passar o mouse sobre os links */
+        nav a:hover {
+            color: #d9a566; /* Cor dourada ao passar o mouse */
+        }
+
+        /* Área dos botões utilitários no topo */
+        .utilitarios-topo {
+            margin-top: 15px;
+        }
+
+        /* 3. ESTRUTURA DO CONTEÚDO PRINCIPAL (MAIN) */
+        main {
+            /* Define a largura máxima centralizada */
+            max-width: 1000px;
+            /* Margem automática nas laterais para centralizar na tela */
+            margin: 30px auto;
+            /* Espaçamento interno lateral */
+            padding: 0 20px;
+        }
+
+        /* Seção Hero de Boas-Vindas */
+        .secao-hero {
+            background-color: rgba(42, 26, 16, 0.85);
+            border: 2px solid #784421;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .secao-hero h2 {
+            font-size: 26px;
+            color: #d9a566;
+            margin-top: 0;
+        }
+
+        .secao-hero p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #e2d2c1;
+        }
+
+        /* 4. CARTÕES DE CONTEÚDO COM IMAGENS */
+        .conteiner-cartoes {
+            /* Flexbox para dispor os cartões em grade responsiva */
+            display: flex;
+            flex-wrap: wrap;
+            /* Espaçamento entre os cartões */
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo individual de cada cartão */
+        .cartao {
+            /* Cada cartão ocupa espaço flexível */
+            flex: 1;
+            min-width: 280px;
+            /* Cor de fundo marrom couro escuro */
+            background-color: rgba(42, 26, 16, 0.9);
+            
+            /* REQUISITO: Uso de Margem, Preenchimento (padding) e Borda (border) */
+            padding: 20px;
+            border: 2px solid #784421;
+            border-top: 4px solid #d9a566; /* Destaque na borda superior */
+            border-radius: 10px;
+            
+            /* Transição para animação do efeito hover */
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito de elevação leve ao passar o mouse no cartão */
+        .cartao:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Títulos dos cartões */
+        .cartao h3 {
+            margin-top: 0;
+            color: #d9a566;
+            font-size: 20px;
+            border-bottom: 1px solid #784421;
+            padding-bottom: 8px;
+        }
+
+        /* Texto dos cartões */
+        .cartao p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #f3e5d8;
+        }
+
+        /* REQUISITO: Imagens internas com Borda e Border-Radius */
+        .imagem-cartao {
+            /* Largura responsiva (100% da caixa pai) */
+            width: 100%;
+            height: 180px;
+            /* Mantém a proporção sem distorcer a imagem */
+            object-fit: cover;
+            
+            /* REQUISITO: Borda explicita */
+            border: 2px solid #d9a566;
+            
+            /* REQUISITO: Border-radius (cantos arredondados) */
+            border-radius: 8px;
+            
+            margin-bottom: 15px;
+        }
+
+        /*  6. FORMULÁRIO DE RECRUTAMENTO (NOME E E-MAIL)*/
+        .secao-formulario {
+            background-color: rgba(42, 26, 16, 0.9);
+            border: 2px solid #d9a566;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .secao-formulario h2 {
+            margin-top: 0;
+            color: #d9a566;
+            font-size: 22px;
+        }
+
+        /* Grupos de campos do formulário */
+        .campo-grupo {
+            margin-bottom: 18px;
+        }
+
+        .campo-grupo label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #d9a566;
+        }
+
+        /* REQUISITO: Inputs de Nome e E-mail estilizados */
+        .campo-grupo input {
+            width: 100%;
+            /* Ajusta a largura para incluir o padding */
+            box-sizing: border-box;
+            padding: 12px;
+            background-color: #1a100a;
+            border: 1px solid #784421;
+            border-radius: 6px;
+            color: #f3e5d8;
+            font-size: 14px;
+        }
+
+        /* Destaque quando o campo de texto é selecionado (foco) */
+        .campo-grupo input:focus {
+            outline: none;
+            border-color: #d9a566;
+        }
+
+        /* Mensagem de confirmação ao enviar o formulário */
+        #mensagemSucesso {
+            display: none;
+            background-color: rgba(120, 68, 33, 0.8);
+            border: 1px solid #d9a566;
+            color: #f3e5d8;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* ================================================
+           7. RODAPÉ DA PÁGINA
+           ================================================ */
+        footer {
+            background-color: rgba(26, 16, 10, 0.95);
+            border-top: 3px solid #d9a566;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 13px;
+            color: #c0b0a0;
+        }
+
+        /* Estilo aplicado ao gerar ou salvar PDF */
+        @media print {
+            header, footer, .utilitarios-topo, .btn-estilizado, .secao-formulario {
+                display: none !important;
+            }
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            .cartao {
+                background: #f8f8f8 !important;
+                color: #000000 !important;
+                border: 1px solid #ccc !important;
+            }
+        }

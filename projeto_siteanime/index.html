@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 (aceita acentos em português) -->
+    <meta charset="UTF-8">
+    <!-- Garante que o site seja responsivo e se adapte bem a telas de celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Attack on Titan - Shingeki no Kyojin</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE (HEADER) -->
+    <header>
+        <!-- Título do Anime -->
+        <h1>ATTACK ON TITAN</h1>
+        
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav>
+            <a href="#historia">História</a>
+            <a href="#muralhas">As Muralhas</a>
+            <a href="#alistamento">Alistar-se</a>
+        </nav>
+    </header>
+
+    <!-- ÁREA DE CONTEÚDO PRINCIPAL (MAIN) -->
+    <main>
+
+        <!-- SEÇÃO HERO DE APRESENTAÇÃO -->
+        <section class="secao-hero">
+            <h2>Shingeki no Kyojin</h2>
+            <p>
+                A humanidade foi encurralada e vive atrás de paredes gigantescas para escapar dos
+                terríveis Titãs. 
+                Junte-se à Divisão de Reconhecimento e descubra a verdade sobre este mundo!
+            </p>
+        </section>
+
+        <!-- SEÇÃO COM CARTÕES DE CONTEÚDO -->
+        <section class="conteiner-cartoes">
+
+            <!-- CARTÃO 1: HISTÓRIA E PROTAGONISTAS -->
+            <article id="historia" class="cartao">
+                <!-- REQUISITO: Imagem que faz sentido com a História/Protagonistas -->
+                <img src="img/img.jpg" 
+                    alt="Eren, Mikasa e Armin - Protagonistas de Attack on Titan" 
+                    class="imagem-cartao" 
+                    width="800"
+                    height="500">
+                    
+                <h3>1. A História & Protagonistas</h3>
+                <p>
+                    Após ver sua cidade natal destruída por um Titã, Eren Yeager, ao lado de seus 
+                    amigos Mikasa Ackerman e Armin Arlert, entra para o exército prometendo erradicar 
+                    todos os Titãs.
+                </p>
+            </article>
+
+            <!-- CARTÃO 2: AS MURALHAS DE DEFESA -->
+            <article id="muralhas" class="cartao">
+                <!-- REQUISITO: Imagem que faz sentido com as Muralhas -->
+                <img src="img/img2.jpg" 
+                    alt="Muralha de pedra gigante protegendo a cidade" 
+                    class="imagem-cartao">
+                <h3>2. As Três Muralhas</h3>
+                <p>
+                    A civilização sobrevive graças a três muralhas concêntricas de 50 metros de altura:
+                    <br>
+                    • <strong>Muralha Maria:</strong> A camada externa.
+                    <br>
+                    • <strong>Muralha Rose:</strong> A camada intermediária.
+                    <br>
+                    • <strong>Muralha Sina:</strong> A camada interna do rei.
+                </p>
+                
+            </article>
+
+            <!-- CARTÃO 3: A TROPA DE EXPLORAÇÃO -->
+            <article class="cartao">
+                <!-- REQUISITO: Imagem para o cartão da tropa de exploração -->
+                <img 
+                    src="img/img4.jpg" 
+                    alt="Divisão de Reconhecimento em Ação" 
+                    class="imagem-cartao"
+                    width="500"
+                    height="600">
+                <h3>3. Divisão de Reconhecimento</h3>
+                <p>
+                    Conhecida como a elite do exército, é responsável por se aventurar fora das 
+                    muralhas para estudar os Titãs e expandir o território humano rumo à liberdade.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- SEÇÃO DE FORMULÁRIO DE RECRUTAMENTO -->
+        <section id="alistamento" class="secao-formulario">
+            <h2>Aliste-se na Divisão de Reconhecimento</h2>
+            <p>Insira seus dados abaixo para se voluntariar:</p>
+
+            <!-- FORMULÁRIO (NOME E E-MAIL) -->
+            <form onsubmit="confirmarAlistamento(event)">
+                
+                <!-- CAMPO 1: NOME COMPLETO -->
+                <div class="campo-grupo">
+                    <label for="nomeRecruta">Nome Completo do Recruta:</label>
+                    <input 
+                        type="text" 
+                        id="nomeRecruta" 
+                        placeholder="Ex: Eren Yeager" 
+                        required
+                    >
+                </div>
+
+                <!-- CAMPO 2: E-MAIL DE CONTATO -->
+                <div class="campo-grupo">
+                    <label for="emailRecruta">E-mail de Contato:</label>
+                    <input 
+                        type="email" 
+                        id="emailRecruta" 
+                        placeholder="Ex: eren@reconhecimento.com" 
+                        required
+                    >
+                </div>
+
+                <!-- BOTÃO DE ENVIO COM :HOVER -->
+                <button type="submit" class="btn-estilizado">Oferecer Meu Coração! (Enviar)</button>
+
+            </form>
+
+            <!-- Mensagem exibida após enviar o formulário -->
+            <div id="mensagemSucesso">
+                 Alistamento Confirmado! Apresente-se no quartel da Tropa de Exploração amanhã ao amanhecer.
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer>
+        <p>&copy; Attack on Titan - Shingeki no Kyojin | Página Educativa para Iniciantes</p>
+    </footer>
+</body>
+</html>
+
